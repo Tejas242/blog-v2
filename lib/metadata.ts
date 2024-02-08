@@ -8,22 +8,22 @@ export const BASE_URL =
   `http://localhost:${process.env.PORT || 3000}`;
 
 export const defaultAuthor: AuthorType = {
-  name: "Amy Shields",
-  handle: "@amyshieldsfake",
+  name: "Tejas Mahajan",
+  handle: "@screenager",
   socialProfiles,
-  email: "definitelyfake@nevermind.com",
-  website: "https://nextjs.org",
-  jobTitle: "Frontend Engineer & UI Designer",
-  company: "Unicorns & Co.",
+  email: "tmahajan09876@nevermind.com",
+  website: "https://scrrenager.in",
+  jobTitle: "Computer Science Student",
+  company: "",
   availableForWork: true,
   location: {
-    city: "Los Angeles",
+    city: "",
     media: "/losangeles.jpg",
   },
 };
 
 const defaultTitle = `${defaultAuthor.name}'s Blog`;
-const defaultDescription = `I'm ${defaultAuthor.name}. Building hackin’ cool digital products around the world 🌴.`;
+const defaultDescription = `I'm ${defaultAuthor.name}. Building & explorin in the world of Computers & Science.`;
 
 const siteMetadata: SiteMetaData = {
   title: {
@@ -31,12 +31,12 @@ const siteMetadata: SiteMetaData = {
     default: defaultTitle,
   },
   description: defaultDescription,
-  siteRepo: "https://github.com/thedevdavid/digital-garden",
+  siteRepo: "https://github.com/tejas242/blog-v2",
   newsletterProvider: "mailerlite",
   newsletterUrl: "https://developreneur.davidlevai.com",
   analyticsProvider: "umami",
   defaultTheme: "system",
-  activeAnnouncement: true,
+  activeAnnouncement: false,
   announcement: {
     buttonText: "Support on DevHunt →",
     link: "https://devhunt.org/tool/modern-developer-blog-template-digital-garden-starter",
