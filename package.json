@@ -1,14 +1,14 @@
 {
-  "name": "digital-garden",
+  "name": "blog-v2",
   "version": "0.7.2",
   "private": true,
-  "repository": "https://github.com/thedevdavid/digital-garden",
+  "repository": "https://github.com/tejas242/blog-v2",
   "author": {
-    "name": "David Levai",
-    "url": "https://twitter.com/thedevdavid"
+    "name": "Tejas Mahajan",
+    "url": "https://twitter.com/screenager242"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "contentlayer dev & next dev",
     "build": "contentlayer build && next build",
     "start": "next start",
     "preview": "next build && next start",

@@ -34,7 +34,7 @@ export default async function Home() {
   return (
     <div className="pb-10">
       <HeroSimple
-        title="Building hackin’ cool digital products around the world 🌴."
+        title="Building & explorin in the world of Computers & Science ☕."
         subtitle="I'm Amy. Frontend engineer writing code and blog on the internet."
       />
       <div className="container mt-12 max-w-6xl">
@@ -52,9 +52,9 @@ export default async function Home() {
               See all posts <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
-          <aside className="w-full">
+          {/* <aside className="w-full">
             <Sidebar />
-          </aside>
+          </aside> */}
         </div>
       </div>
       {siteMetadata.newsletterUrl && (
