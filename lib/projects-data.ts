@@ -3,7 +3,7 @@ export const projects = [
     title: "Termtel - Command Line AI Helper",
     description: `Termtel is a command AI line helper, To help you remember those tricky unix command just by text, Made with Gemini`,
     href: "https://github.com/Tejas242/termtel",
-    mediaSrc: "/projects/termtel.webm",
+    mediaSrc: "/projects/termtel.mp4",
     mediaType: "video",
   },
   {
