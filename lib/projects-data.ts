@@ -1,9 +1,9 @@
 export const projects = [
   {
-    title: "ProductEngineerJobs.co",
-    description: `Job board for product engineers. Built with Next.js, Tailwind CSS, and Airtable.`,
-    href: "https://productengineerjobs.co",
-    mediaSrc: "/project-pejobs.png",
+    title: "Termtel - Command Line AI Helper",
+    description: `Termtel is a command AI line helper, To help you remember those tricky unix command just by text, Made with Gemini`,
+    href: "https://github.com/Tejas242/termtel",
+    mediaSrc: "/projects/termtel.png",
     mediaType: "image",
   },
   {

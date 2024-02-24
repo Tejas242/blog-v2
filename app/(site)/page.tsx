@@ -34,12 +34,13 @@ export default async function Home() {
   return (
     <div className="pb-10">
       <HeroSimple
-        title="Building & explorin in the world of Computers & Science ☕."
-        subtitle="I'm Amy. Frontend engineer writing code and blog on the internet."
+        title="Building & exploring the world of Computer Science ☕."
+        subtitle="I'm Tejas. Computer Science writing code and blog on the internet."
       />
       <div className="container mt-12 max-w-6xl">
-        <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">
-          <div className="col-span-1 w-full lg:col-span-2">
+        <h2 className="mb-8 font-heading text-4xl font-bold">Something to read...</h2>
+        <div>
+          <div>
             <div className="grid grid-flow-row gap-2">
               {posts.map((post) => (
                 <PostPreview key={post._id} post={post} />
@@ -52,26 +53,24 @@ export default async function Home() {
               See all posts <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
-          {/* <aside className="w-full">
-            <Sidebar />
-          </aside> */}
         </div>
       </div>
-      {siteMetadata.newsletterUrl && (
+      {/* {siteMetadata.newsletterUrl && (
         <NewsletterSubscribe
           title="I also write deep dives in email"
           description="I write about coding, design, digital nomad life, and solopreneurship. Join over 1,000 other developers in
             getting better in business. Unsubscribe whenever."
           buttonText="Send me the emails"
         />
-      )}
+      )} */}
+
       {aboutPage && (
-        <div className="container max-w-6xl">
-          <h2 className="mb-8 font-heading text-4xl font-bold">Who&apos;s this girl again?</h2>
+        <div className="container mt-8 max-w-6xl">
+          <h2 className="mb-8 font-heading text-4xl font-bold">Who&apos;s this guy again?</h2>
           <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">
             <div className="col-span-1 mx-auto flex flex-col items-center justify-center">
               <Image
-                src="/avatar-home.png"
+                src="/screenager.png"
                 alt={defaultAuthor.name}
                 width={400}
                 height={498}

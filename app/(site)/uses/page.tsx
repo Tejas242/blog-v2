@@ -37,7 +37,8 @@ export default async function SocialPage() {
           ))}
         </ul>
         <h2>Hardware</h2>
-        <ul>
+        <p>Not to mention</p>
+        {/* <ul>
           {hardware.map((item) => (
             <li key={item.href}>
               <a href={item.href} target="_blank">
@@ -45,7 +46,7 @@ export default async function SocialPage() {
               </a>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </article>
     </div>
   );

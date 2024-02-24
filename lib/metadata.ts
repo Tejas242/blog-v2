@@ -11,11 +11,11 @@ export const defaultAuthor: AuthorType = {
   name: "Tejas Mahajan",
   handle: "@screenager",
   socialProfiles,
-  email: "tmahajan09876@nevermind.com",
+  email: "tmahajan09876@gmail.com",
   website: "https://scrrenager.in",
   jobTitle: "Computer Science Student",
   company: "",
-  availableForWork: true,
+  availableForWork: false,
   location: {
     city: "",
     media: "/losangeles.jpg",
@@ -23,7 +23,7 @@ export const defaultAuthor: AuthorType = {
 };
 
 const defaultTitle = `${defaultAuthor.name}'s Blog`;
-const defaultDescription = `I'm ${defaultAuthor.name}. Building & explorin in the world of Computers & Science.`;
+const defaultDescription = `I'm ${defaultAuthor.name}. Building & exploring the world of Computer Science.`;
 
 const siteMetadata: SiteMetaData = {
   title: {

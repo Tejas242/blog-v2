@@ -40,7 +40,7 @@ const Footer = () => {
               {defaultAuthor.handle}
             </a>
           </p>
-          <p className="text-sm text-muted-foreground md:text-left">
+          {/* <p className="text-sm text-muted-foreground md:text-left">
             Source code available on{" "}
             <a
               href={siteMetadata.siteRepo}
@@ -51,7 +51,7 @@ const Footer = () => {
               GitHub
             </a>
             .
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

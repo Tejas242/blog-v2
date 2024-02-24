@@ -12,7 +12,6 @@ export const tagOptions = [
   "docs",
   "freelancing",
   "opinion",
-  "jamstack",
   "frontend",
   "development",
   "javascript",
