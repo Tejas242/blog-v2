@@ -4,7 +4,9 @@ import { allPages, allPosts } from "contentlayer/generated";
 import { ArrowRight } from "lucide-react";
 
 import siteMetadata, { defaultAuthor } from "@/lib/metadata";
+import { projects } from "@/lib/projects-data";
 import { sortByDate } from "@/lib/utils";
+import Skills from "@/components/ui/skills";
 import { HeroImage } from "@/components/hero-image";
 import { HeroMinimal } from "@/components/hero-minimal";
 import { HeroSimple } from "@/components/hero-simple";
@@ -13,6 +15,7 @@ import { Sidebar } from "@/components/home-sidebar";
 import { Mdx } from "@/components/mdx";
 import NewsletterSubscribe from "@/components/newsletter-subscribe";
 import PostPreview from "@/components/post-preview";
+import { SpotlightCard } from "@/components/spotlight-card";
 
 async function getAboutPage() {
   const aboutPage = allPages.find((page) => page.slug === "about");
@@ -34,9 +37,25 @@ export default async function Home() {
   return (
     <div className="pb-10">
       <HeroSimple
-        title="Building & exploring the world of Computer Science ☕."
+        title="Building & exploring the world of"
+        subject="Computer Science"
         subtitle="I'm Tejas. Computer Science writing code and blog on the internet."
       />
+      <div className="container max-w-6xl pb-10">
+        <Skills />
+      </div>
+      <div className="container max-w-6xl pb-10">
+        <div>
+          <h2 className="mb-8 font-heading text-4xl font-bold">Projects</h2>
+          <div>
+            <div className="grid items-stretch gap-4 md:grid-cols-3">
+              {projects.map((item) => (
+                <SpotlightCard key={item.href} {...item} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="container mt-12 max-w-6xl">
         <h2 className="mb-8 font-heading text-4xl font-bold">Something to read...</h2>
         <div>
@@ -63,7 +82,6 @@ export default async function Home() {
           buttonText="Send me the emails"
         />
       )} */}
-
       {aboutPage && (
         <div className="container mt-8 max-w-6xl">
           <h2 className="mb-8 font-heading text-4xl font-bold">Who&apos;s this guy again?</h2>
