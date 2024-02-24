@@ -8,6 +8,7 @@ import remarkMath from "remark-math";
 
 import { Page } from "./lib/content-definitions/page";
 import { Post } from "./lib/content-definitions/post";
+import { rehypePrettyCodeOptions } from "./lib/rehypePrettyCode";
 
 export const HEADING_LINK_ANCHOR = `anchor-heading-link`;
 
@@ -37,7 +38,10 @@ export default makeSource({
         {
           // prepacked themes
           // https://github.com/shikijs/shiki/blob/main/docs/themes.md
-          theme: "github-dark",
+          theme: {
+            dark: "one-dark-pro",
+            // light: "solarized-light",
+          },
 
           // https://stackoverflow.com/questions/76549262/onvisithighlightedline-cannot-push-classname-using-rehype-pretty-code
           // FIXME: maybe properly type this
