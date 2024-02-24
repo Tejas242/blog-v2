@@ -7,10 +7,10 @@ export const projects = [
     mediaType: "image",
   },
   {
-    title: "Developer Digital Garden",
-    description: `An open source blogging (digital gardening) template for developers using Next.js app router, MDX, Contentlayer, Tailwind CSS, @shadcn/ui, Lucide Icons, and more.`,
-    href: "https://github.com/thedevdavid/digital-garden",
-    mediaSrc: "/project-garden.mp4",
-    mediaType: "video",
+    title: "Portfolio + Blog",
+    description: `My Personal portfolio to showcase my work and blog to share my thoughts and ideas`,
+    href: "https://blog-v2-alpha.vercel.app",
+    mediaSrc: "/projects/portfolio.png",
+    mediaType: "image", // or video
   },
 ];
