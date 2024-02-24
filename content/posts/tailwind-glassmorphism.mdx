@@ -8,7 +8,7 @@ tags:
   - javascript
   - frontend
 description: Quick guide on how to make glass morph components with Tailwind (updated for latest Tailwind version)
-status: draft
+status: published
 ---
 
 Glassmorphism is an ongoing trend right now in User interfaces. The new macOS, Big Sur brings a lot of it into the OS, and Microsoft has it for years with Aero UI, then later FluentUI.
@@ -47,27 +47,6 @@ Add a style property to the card div: `style="backdrop-filter: blur(20px);"`.
 We can use [Tailwindcss-filters](https://github.com/benface/tailwindcss-filters) to extend it and use `backdrop-filter` as a utility class.
 
 Just `yarn add tailwindcss-filters`, then extend your `tailwind.config` file:
-
-```js title="test.js" showLineNumbers
-const merge = (left, right) => {
-  let result = [];
-  while (left.length && right.length) {
-    if (left[0] < right[0]) {
-      result.push(left.shift());
-    } else {
-      result.push(right.shift());
-    }
-  }
-  return [...result, ...left, ...right];
-};
-const mergeSort = (arr) => {
-  if (arr.length <= 1) return arr;
-  const middle = Math.floor(arr.length / 2);
-  const left = arr.slice(0, middle);
-  const right = arr.slice(middle);
-  return merge(mergeSort(left), mergeSort(right));
-};
-```
 
 ```tailwind.config.js
 module.exports = {

@@ -73,8 +73,8 @@ export const SpotlightCard = ({ title, description, mediaSrc, mediaType, href }:
       <AspectRatio ratio={16 / 9}>
         {mediaType === "video" ? (
           <video autoPlay loop muted playsInline className="m-0 p-0">
-            {/* <source src="/project-garden.webm" type="video/webm" /> */}
-            <source src={mediaSrc} type="video/mp4" />
+            <source src="/project-garden.webm" type="video/webm" />
+            <source src="/project-garden.mp4" type="video/mp4" />
           </video>
         ) : (
           <Image src={mediaSrc} alt={title} width={960} height={540} className="m-0 p-0" />
