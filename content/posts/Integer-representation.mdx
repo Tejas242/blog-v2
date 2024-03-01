@@ -1,0 +1,60 @@
+---
+title: "INTEGERS: Integer Representation"
+publishedDate: "2024-02-24"
+lastUpdatedDate: "2024-02-24"
+tags:
+  - COA
+  - Math
+  - Binary Numbers
+  - Core Concepts
+description: "How the computer knows it's a number and not a letter? How does it store numbers? How does it perform arithmetic operations? Let's find out!"
+status: draft
+series:
+  order: 0
+  title: "INTEGERS"
+---
+
+Hey, well so I was preparing for my exam and I came across this topic of integers and how they are represented in the computer. I thought it would be a good idea to share this with you. Because, It's confusing how the things made up of some semiconductors can understand what's a number and what to do with it. So, let's dive into it.
+
+## The Protagonist: Binary Numbers
+
+Every wondered what these 0 and 1's are? Well they seem to be just two guys roaming around in your machines. Keeping all your beautiful data and memories (and offcourse your code). They are called binary numbers.
+
+Now you will say why binary? Why not decimal? Why not Hakuna Matata? Well, the answer is simple. It's because of the way computers are built. They are made up of semiconductors which can be in two states: ON and OFF. So, it's easy to represent these two states with 0 and 1. And that's why we use binary numbers.
+
+There is a things called radix or base of a number system. It's the number of unique digits, including zero, used to represent numbers in a positional numeral system. For example, the radix of the decimal system is 10, because it uses the 10 digits from 0 to 9. The radix of the binary system is 2, because it uses two digits: 0 and 1.
+
+## Integer Representation
+
+So, how does the computer know it's a number and not a letter? How does it store numbers? How does it perform arithmetic operations? Let's find out!
+
+### Sign Magnitude Representation
+
+[Image of Binary Number](/posts/integer-representation/binary-number.png)
+The simplest way to represent integers is to use the unsigned integer representation. In this representation, the most significant bit (MSB -> The guy to the left) is used to represent the sign of the number. If the MSB is 0, the number is positive, and if the MSB is 1, the number is negative. The remaining bits are used to represent the magnitude of the number.
+
+So, for example, if we have 8 bits to represent a number, the range of numbers that can be represented is from 0 to 255. The MSB is used to represent the sign of the number, and the remaining 7 bits are used to represent the magnitude of the number.
+
+In general we can write it as follows:
+
+$$
+A = \{\begin{matrix}
+ \sum_{i=0}^{n-2}2^ia_i & if a_{n-1} = 0 \\
+ -\sum_{i=0}^{n-2}2^ia_i & if a_{n-1} = 1 \\
+\end{matrix}.
+$$
+
+Where:
+
+- \(A\) is the integer number.
+- \(a\_{n-1}\) is the most significant bit (MSB).
+- \(a_i\) are the remaining bits.
+
+But, this representation has a problem. Let me ask you a question? How will you represent 0? Well, you can't, meaning you can but there will be two zeros. Because, 0 can be represented as 00000000 and 10000000. So, we need a better representation.
+
+### Two's Complement Representation
+
+[Image of Two's Complement](/posts/integer-representation/twos-complement.png)
+The two's complement representation is the most commonly used representation for integers. In this representation, the most significant bit (MSB) is used to represent the sign of the number. If the MSB is 0, the number is positive, and if the MSB is 1, the number is negative. The remaining bits are used to represent the magnitude of the number.
+
+The two's complement representation is obtained by taking the one's complement of the number and adding 1 to the result. The one's complement of a number is obtained by changing all the 0's to 1's and all the 1's to 0's. For example, the one's complement of 1010 is 0101.
